@@ -1,7 +1,6 @@
 import common.Solver
 import common.runAndTime
 import common.loadInput
-import java.lang.Math.min
 
 fun main() {
     val input = loadInput("day-06.txt")
@@ -44,7 +43,7 @@ class Day06 : Solver {
             for (x in startX.toInt()..endX.toInt()) {
                 for (y in startY.toInt() .. endY.toInt()) {
                     when (instruction) {
-                        "turn off" -> grid[x][y] = (grid[x][y] - 1).coerceAtMost(0)
+                        "turn off" -> if (grid[x][y] > 0) grid[x][y] = grid[x][y] - 1
                         "turn on" -> grid[x][y] = grid[x][y] + 1
                         "toggle" -> grid[x][y] = grid[x][y] + 2
                     }
