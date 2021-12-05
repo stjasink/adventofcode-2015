@@ -16,7 +16,7 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib")
 	testImplementation("org.junit.jupiter:junit-jupiter:5.8.2")
-	testImplementation("io.mockk:mockk:1.12.0")
+	testImplementation("io.mockk:mockk:1.12.1")
 	testImplementation("org.skyscreamer:jsonassert:1.5.0")
 }
 
